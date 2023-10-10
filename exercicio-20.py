@@ -1,26 +1,15 @@
-num = []
-numimpar = []
-numpar = []
-numpos = []
-numneg = []
-zero = []
+a = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-for x in range(10):
-    n = int(input("Digite um número: "))
-    num.append(n)
-
-for n in num:
-    if n % 2 == 0:
-        numpar.append(n)
+for c in range(10):
+    a[c] = int(input("Digite um número: "))
+for m in range(10):
+    if a[m] %2 == 0:
+        print(f"Esse número é par {a[m]}")
     else:
-        numimpar.append(n)
-
-    if n > 0:
-        numpos.append(n)
-    elif n < 0:
-        numneg.append(n)
+        print(f"Esse número é impar {a[m]}")
+    if a[m] > 0:
+        print(f"Esse número é positivo {a[m]}")
+    elif a[m] < 0:
+        print(f"Esse número é negativo {a[m]}")
     else:
-        zero.append(n)
-
-print(f"Números ímpares: {numimpar}\nNúmeros pares: {numpar}\nNúmeros positivos: {numpos}\nNúmeros negativos: {numneg}\nZeros:{zero}")
-
+        print(f"Esse número é zero {a[m]}")
